@@ -10,13 +10,13 @@ import java.util.List;
 class MeasuredGroupLootList
 {
     @Getter
-    private List<MeasuredGroupLootDrop> drops = new ArrayList<>();
+    private final List<MeasuredGroupLootDrop> drops = new ArrayList<>();
 
     @Getter
-    private int maximumLineWidth;
+    private final int maximumLineWidth;
 
     @Getter
-    private int maximumLineHeight;
+    private final int maximumLineHeight;
 
     MeasuredGroupLootList(List<GroupLootDrop> drops, GroupChatLootConfig config, FontMetrics fontMetrics, SimpleDateFormat timestampFormatter)
     {

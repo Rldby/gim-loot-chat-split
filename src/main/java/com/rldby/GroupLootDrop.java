@@ -23,16 +23,16 @@ class GroupLootDrop
 
 
     @Getter
-    private MessageNode messageNode;
+    private final MessageNode messageNode;
 
     @Getter
     private int timestamp;
 
     @Getter
-    private String playerName;
+    private final String playerName;
 
     @Getter
-    private String itemName;
+    private final String itemName;
 
     @Getter
     private String rawItemValue;
@@ -44,7 +44,7 @@ class GroupLootDrop
     private ZonedDateTime zonedTimestamp;
 
     @Getter
-    private String itemNameNoQuantity;
+    private final String itemNameNoQuantity;
 
     private GroupLootDrop(MessageNode messageNode, String playerName, String itemName, String rawItemValue)
     {

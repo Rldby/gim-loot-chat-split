@@ -8,10 +8,10 @@ import java.text.SimpleDateFormat;
 @Getter
 class MeasuredGroupLootDrop
 {
-    private GroupLootDrop drop;
-    private int leftPartWidth;
-    private int rightPartWidth;
-    private int lineHeight;
+    private final GroupLootDrop drop;
+    private final int leftPartWidth;
+    private final int rightPartWidth;
+    private final int lineHeight;
 
     MeasuredGroupLootDrop(GroupLootDrop drop, FontMetrics fontMetrics, SimpleDateFormat timestampFormatter, boolean includesPrice)
     {

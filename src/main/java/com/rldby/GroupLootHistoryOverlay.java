@@ -44,7 +44,7 @@ class GroupLootHistoryOverlay extends Overlay
                 int padding = config.historyOverlayPadding();
                 int rowSpacing = config.historyOverlayRowSpacing();
                 SimpleDateFormat timestampFormatter = getFormatter(config);
-                Font userFont = new Font(config.fontFamily().getFontName(), 0, config.fontSize());
+                Font userFont = new Font(config.fontFamily().getFontName(), Font.PLAIN, config.fontSize());
                 FontMetrics fontMetrics = graphics.getFontMetrics(userFont);
 
                 graphics.setFont(userFont);
